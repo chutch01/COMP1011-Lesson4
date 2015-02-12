@@ -1,12 +1,10 @@
-/**
- * 
- */
 
 /**
- * @author Cody Hutchinson
+ * @author Tom Tsiliopoulos
  *
  */
 import javax.swing.JOptionPane;
+
 
 
 public class Program {
@@ -18,28 +16,31 @@ public class Program {
 		String firstNumber = "";
 		String secondNumber = "";
 		
-		//obtain user input
-
-		try{	
-			firstNumber = JOptionPane.showInputDialog("Enter first Integer");
+		try {
+			
+			firstNumber = JOptionPane.showInputDialog("Enter First Integer");
 			System.out.println(firstNumber);
-			secondNumber = JOptionPane.showInputDialog("Enter second Integer");
+			secondNumber = JOptionPane.showInputDialog("Enter Second Integer");
 			System.out.println(secondNumber);
 			
 			int number1 = Integer.parseInt(firstNumber);
-			int number2 = Integer.parseInt(secondNumber);
+			int number2 = Integer.parseInt(secondNumber);	
 			
 			int sum = number1 + number2;
 			
-			//JOptionPane.showMessageDialog(null, "The sum is" + sum + "The sum of two integers",);
-			JOptionPane.showMessageDialog(null, "The Sum is " + sum, "The Sum of two integers", JOptionPane.PLAIN_MESSAGE);
+			JOptionPane.showMessageDialog(null, "The Sum is " + sum, "Sum of two integers", JOptionPane.PLAIN_MESSAGE);
+			
+		} catch (Exception e) {
+			JOptionPane.showMessageDialog(null, "Incorrect Values Entered", "Entry Error", JOptionPane.ERROR_MESSAGE);
+			System.out.println(e);
 		}
-		 catch(Exception e){
-			 JOptionPane.showMessageDialog(null, "Incorrect values entered" ,"Entry Error", JOptionPane.ERROR_MESSAGE);
-			 System.out.println("incorrect values entered");
-			 System.out.println(e);
-		 }
+		
+		
+		
+		
+		
+		
 
-	
 	}
+
 }

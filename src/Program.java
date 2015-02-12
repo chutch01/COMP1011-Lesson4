@@ -3,7 +3,8 @@
  * @author Tom Tsiliopoulos
  *
  */
-import javax.swing.JOptionPane;
+import javax.swing.*;
+
 
 
 
@@ -13,8 +14,16 @@ public class Program {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		
+		MyWindow myWindow = new MyWindow();
+		
+		myWindow.setVisible(true);
+		
+		
+		/*
 		String firstNumber = "";
 		String secondNumber = "";
+		
 		
 		try {
 			
@@ -42,5 +51,6 @@ public class Program {
 		
 
 	}
-
+*/
+	}
 }
